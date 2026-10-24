@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>AETHEROS — 초고압축 Mobile · Tablet OS (디자인 계획)</title>
   <meta name="description" content="AETHERION AI의 가성비·고효율·예쁜 디자인·초고압축 Mobile/Tablet OS 서브 회사 디자인 계획. 출시 OS를 주장하지 않습니다."/>
+  <meta name="theme-color" content="#8b5cff"/>
   <link rel="stylesheet" href="assets/site.css"/>
 </head>
 <body>
@@ -21,6 +22,7 @@
         <p>AETHEROS는 AETHERION AI의 OS 서브 회사 <strong>디자인·계획</strong>이에요. 가성비 · 고효율 · 예쁜 UI · 초고압축을 목표로, 지금은 <em>비주얼 콘셉트 3개</em>와 쓸 기술 후보만 정리합니다. 출시·벤치·점유율은 주장하지 않아요.</p>
         <div class="btns">
           <a class="btn btn-p" href="#designs">디자인 방향 3개</a>
+          <a class="btn btn-g" href="#tech">기술 후보</a>
           <a class="btn btn-g" href="https://aetherion.o-r.kr/">모회사 AETHERION</a>
         </div>
       </div>
@@ -31,33 +33,87 @@
 
     <section class="section" id="designs">
       <h2>디자인 방향 3개</h2>
-      <p class="lead">시각 콘셉트만. 실제 커널·이미지는 아직 없습니다.</p>
+      <p class="lead">시각 콘셉트만. 실제 커널·시스템 이미지는 아직 없습니다. 폰·탭 목업은 CSS Liquid Glass 데모예요.</p>
       <div class="grid3">
         <article class="glass card">
-          <span class="tag">Concept A</span>
+          <span class="tag">Concept A · Visual</span>
           <h3>유리알 · Glass Pearl</h3>
           <p>Liquid Glass 프로스티드 패널, 숨 쉬는 앰비언트 글로우, 바이올렛↔시안 하이라이트. 크롬은 얇고 여백은 넉넉. 프리미엄이지만 가벼운 인상.</p>
+          <ul class="bullets">
+            <li>반투명 카드 · 블러 20px+</li>
+            <li>얇은 상태바 · 큰 아이콘 그리드</li>
+            <li>모회사 AETHERION과 같은 유리 감성</li>
+          </ul>
           <div class="device-row">
-            <div class="glass mock"><div class="bar"></div><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div>
-            <div class="glass mock tablet"><div class="bar"></div><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div>
+            <div class="phone" aria-hidden="true">
+              <div class="notch"></div>
+              <div class="screen">
+                <div class="bar"></div>
+                <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+                <div class="dock"><span></span></div>
+              </div>
+            </div>
+            <div class="tablet-frame" aria-hidden="true">
+              <div class="notch"></div>
+              <div class="screen">
+                <div class="bar" style="width:28%"></div>
+                <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+              </div>
+            </div>
           </div>
         </article>
         <article class="glass card">
-          <span class="tag">Concept B</span>
+          <span class="tag near">Concept B · Density</span>
           <h3>압축핵 · Compact Nucleus</h3>
           <p>저사양 폰을 위한 고밀도 타일·제스처 셸. 정보 밀도를 올리되 터치 타깃은 유지. “작아진 루트파일시스템”을 UI 메타포로 — 중첩 사각형, 압축된 아이콘 그리드.</p>
+          <ul class="bullets">
+            <li>좁은 갭 · 작은 타일 · 제스처 힌트</li>
+            <li>상태바 폭을 줄여 “압축” 인상</li>
+            <li>초고압축 OS 목표와 시각적으로 맞춤</li>
+          </ul>
           <div class="device-row">
-            <div class="glass mock"><div class="bar" style="width:55%"></div><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div>
-            <div class="glass mock tablet"><div class="bar" style="width:48%"></div><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div>
+            <div class="phone" aria-hidden="true">
+              <div class="notch"></div>
+              <div class="screen dense">
+                <div class="bar" style="width:52%"></div>
+                <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+                <div class="dock"><span></span></div>
+              </div>
+            </div>
+            <div class="tablet-frame" aria-hidden="true">
+              <div class="notch"></div>
+              <div class="screen dense">
+                <div class="bar" style="width:44%"></div>
+                <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+              </div>
+            </div>
           </div>
         </article>
         <article class="glass card">
-          <span class="tag">Concept C</span>
+          <span class="tag asp">Concept C · KR-first</span>
           <h3>한빛 탭 · Hanbit</h3>
-          <p>한국어 타이포그래피 우선, 밝은 소프트 악센트(가족 DNA) + 바이올렛 시스템 색. 태블릿 듀얼 페인·스플릿 앱을 기본으로. “예쁘고 읽기 쉬운” 쪽이 핵심.</p>
+          <p>한국어 타이포그래피 우선, 밝은 오렌지 악센트(가족 DNA) + 바이올렛 시스템 색. 태블릿 듀얼 페인·스플릿 앱을 기본으로. “예쁘고 읽기 쉬운” 쪽이 핵심.</p>
+          <ul class="bullets">
+            <li>가족 오렌지(#ff7a3d) 하이라이트</li>
+            <li>탭 스플릿·듀얼 페인 우선</li>
+            <li>한글 가독성 · 넉넉한 줄간격</li>
+          </ul>
           <div class="device-row">
-            <div class="glass mock"><div class="bar" style="background:linear-gradient(90deg,#ff7a3d,#8b5cff)"></div><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div>
-            <div class="glass mock tablet"><div class="bar" style="width:62%;background:linear-gradient(90deg,#ff7a3d,#42e8ff)"></div><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div>
+            <div class="phone" aria-hidden="true">
+              <div class="notch"></div>
+              <div class="screen hanbit">
+                <div class="bar"></div>
+                <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+                <div class="dock"><span></span></div>
+              </div>
+            </div>
+            <div class="tablet-frame" aria-hidden="true">
+              <div class="notch"></div>
+              <div class="screen hanbit">
+                <div class="bar" style="width:58%;background:linear-gradient(90deg,#ff7a3d,#42e8ff)"></div>
+                <div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div>
+              </div>
+            </div>
           </div>
         </article>
       </div>
@@ -65,9 +121,10 @@
 
     <section class="section" id="tech">
       <h2>쓸 기술 후보 (정직 나열)</h2>
-      <p class="lead">출시 스택이 아니라, 디자인·프로토타입에 맞춰 검토할 후보예요.</p>
+      <p class="lead">출시 스택이 아니라, 디자인·프로토타입에 맞춰 검토할 후보예요. 가까운 것 / 먼 것을 표시했습니다.</p>
       <div class="grid3">
         <article class="glass card">
+          <span class="tag near">가까운 검토</span>
           <h3>베이스 · 압축</h3>
           <ul class="tech">
             <li>Alpine / musl 또는 Buildroot 루트fs</li>
@@ -77,21 +134,23 @@
           </ul>
         </article>
         <article class="glass card">
+          <span class="tag near">가까운 검토</span>
           <h3>셸 · UI</h3>
           <ul class="tech">
-            <li>Flutter / Dart — 폰·탭 단일 코드베이스</li>
-            <li>(먼 목표) Wayland + Smithay(Rust) 컴포지터</li>
+            <li>Flutter / Dart — 폰·탭 단일 코드베이스 (프로토타입 우선)</li>
             <li>Skia / Impeller · Vulkan 가능 시</li>
             <li>제스처 셸 · 스플릿 페인 태블릿 레이아웃</li>
+            <li class="far">(먼 목표) Wayland + Smithay(Rust) 컴포지터</li>
           </ul>
         </article>
         <article class="glass card">
+          <span class="tag near">가까운 검토</span>
           <h3>커널 · AI · 빌드</h3>
           <ul class="tech">
             <li>가까운 경로: Linux mainline</li>
-            <li>(연구) 마이크로커널은 훨씬 먼 목표</li>
             <li>온디바이스 사이드카: llama.cpp (가족 DNA)</li>
             <li>CI: GitHub Actions + QEMU 이미지 빌드</li>
+            <li class="far">(연구·먼 목표) 마이크로커널</li>
           </ul>
         </article>
       </div>
@@ -101,18 +160,19 @@
       <div class="family">
         <div>
           <strong>AETHERION family</strong>
-          <div style="color:var(--dim);font-size:.92rem;margin-top:4px">모회사 AI 스튜디오 · 생명과학 · 초고압축 OS — 워드마크 AETHER* 공유.</div>
+          <div style="color:var(--dim);font-size:.92rem;margin-top:4px">모회사 AI 스튜디오 · 생명과학 · 초고압축 OS — 워드마크 AETHER* 공유 · Liquid Glass DNA.</div>
         </div>
-        <div class="btns">
-          <a class="btn btn-g" href="https://aetherion.o-r.kr/">aetherion.o-r.kr</a>
-          <a class="btn btn-g" href="https://aetherbio.o-r.kr/">aetherbio.o-r.kr</a>
+        <div class="family-links">
+          <a class="pill" href="https://aetherion.o-r.kr/"><span class="dot" style="background:#ff7a3d"></span>AETHERION</a>
+          <a class="pill" href="https://aetherbio.o-r.kr/"><span class="dot" style="background:#1fa88a"></span>AETHERBIO</a>
+          <a class="pill" href="https://aetheros.o-r.kr/"><span class="dot" style="background:#8b5cff"></span>AETHEROS</a>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="glass disclaimer">
-        <strong>정직한 고지.</strong> 이 페이지는 OS <em>디자인·계획</em>입니다. 출시된 운영체제·벤치마크·점유율·파트너십·출시일을 사실처럼 적지 않았어요. 위 기술은 후보이며, 실제 구현은 GPU 대여·하드웨어 확보 이후에나 시도할 수 있습니다.
+        <strong>정직한 고지.</strong> 이 페이지는 OS <em>디자인·계획</em>입니다. 출시된 운영체제·벤치마크·점유율·파트너십·출시일을 사실처럼 적지 않았어요. 위 기술은 후보이며, 실제 구현은 GPU 대여·하드웨어 확보 이후에나 시도할 수 있습니다. 디바이스 목업은 CSS 데모일 뿐, 실기기 스크린샷이 아닙니다.
       </div>
     </section>
 
